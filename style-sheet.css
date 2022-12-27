@@ -1,0 +1,19 @@
+html {
+  background: pink;
+}
+
+.heading {
+  text-align: center;
+  color: cyan;
+  background: white;
+  border: medium solid black;
+  border-radius: 10px;
+  border-width: max-content;
+  padding: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} .heading p{
+  color: black;
+}
