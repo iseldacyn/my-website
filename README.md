@@ -1,2 +1,3 @@
-# My Personal Website
-Source code for a website about me I plan on working on continuously. I hope to get more experience with HTML, CSS, and JS/TS.
+# Iselda's webpage
+
+Still in development! I recently got it hosted on an Oracle Cloud Server and can be reached at https://cyndquil.com 
