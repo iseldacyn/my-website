@@ -25,6 +25,7 @@ body {
 	background: #80281e;
 	color: #e2c187;
 }
+.navbar .links { transition: 0.4s; }
 
 /* make selected element different */
 .navbar a.active {
@@ -61,15 +62,27 @@ body {
 	transform: translate( 0, -10px ) rotate( 45deg );
 }
 
+
 /* small screen support */
 @media screen and (max-width: 970px) {
 	/* make small screen navigation bar hide other elements */
-	.navbar a:not(.home) { display: none }
+	.navbar {
+		position: fixed;
+		top: 0;
+		width: 100%;
+	}
+	.navbar .links {
+		display: flex;
+		flex-direction: column-reverse;
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.4s ease-out;
+	}
 	.navbar .hamburg {
 		float: right;
 		display: block;
 		padding: 3px 14px;
-		cursor:pointer;
+		cursor: pointer;
 	}
 
 	/* have elements list vertically instead */
@@ -82,6 +95,8 @@ body {
 	.navbar.responsive .links {
 		display: flex;
 		flex-direction: column-reverse;
+		max-height: 200px;
+		transition: max-height 0.4s ease-in;
 	}
 	.navbar.responsive a {
 		float: none;
