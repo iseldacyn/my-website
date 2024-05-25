@@ -1,0 +1,74 @@
+body {
+	background: #3480e1;
+	margin: 0;
+	font-family: sans-serif;
+}
+
+/* navigation bar color + properties */
+.navbar {
+	background: #e2c187;
+	border-bottom: medium solid black;
+	overflow: hidden;
+}
+
+/* navbar links highlight when hovered */
+.navbar a {
+	float: right;
+	display: block;
+	padding: 14px 24px;
+	text-align: center;
+	text-decoration: none;
+	color: #80281e;
+	font-size: 18px;
+}
+.navbar a:hover {
+	background: #80281e;
+	color: #e2c187;
+}
+
+/* make selected element different */
+.navbar a.active {
+	color: #e2c187;
+	background: #3480e1;
+}
+
+/* home separate from others */
+.navbar a.home {
+	float: left;
+	color: #5121b4;
+	text-decoration: none;
+}
+.navbar a.home:hover {
+	background: none;
+}
+
+/* small screen support */
+.navbar .hamburg {
+	display: none;
+}
+@media screen and (max-width: 970px) {
+	/* make small screen navigation bar hide other elements */
+	.navbar a:not(.home) { display: none }
+	.navbar a.hamburg {
+		float: right;
+		display: block;
+	}
+
+	/* have elements list vertically instead */
+	.navbar.responsive { position: relative; }
+	.navbar.responsive a.hamburg {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.navbar.responsive .links {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	.navbar.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+}
+
