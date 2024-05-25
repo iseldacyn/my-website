@@ -7,3 +7,9 @@ function toggleNavbar()
 	else
 		x.className = "navbar";
 }
+
+/* change hamburger to X */
+function toggleHamburger(x)
+{
+	x.classList.toggle( "change" )
+}
