@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Iselda's Informational Inventory</title>
 		<link rel="icon" type="image/x-icon" href="../images/favicon.png">
 		<link rel="stylesheet" href="../stylesheets/style.css">
+		<script src="../scripts/script.js"></script>
 	</head>
 
 	<body>
-		<div class="navbar">
+		<div class="navbar" id="navigation_bar">
 			<a href="./index.html" class="home">Iselda's Informational Inventory</a>
-			<a href="./future.html" class="active">Future Plans</a>
-			<a href="./hobbies.html">Hobbies & Interests</a>
-			<a href="./projects.html">Projects</a>
-			<a href="./about-me.html">About Me</a>
+			<div class="links">
+				<a href="./future.html" class="active">Future Plans</a>
+				<a href="./hobbies.html">Hobbies & Interests</a>
+				<a href="./projects.html">Projects</a>
+				<a href="./about-me.html">About Me</a>
+			</div>
+			<a href="javascript:void(0);" class="hamburg" onclick="toggleNavbar()">+++</a>
 		</div>
 	</body>
 </html>
