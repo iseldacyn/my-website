@@ -9,7 +9,6 @@ body {
 .main_body {
 	position: relative;
 	margin: 5%;
-	margin-top: 2%;
 	margin-bottom: 2%;
 	height: 500vh;
 	background: #e2c187;
@@ -19,6 +18,10 @@ body {
 
 /* navigation bar color + properties */
 .navbar {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 7;
 	background: #e2c187;
 	border-bottom: medium solid black;
 	overflow: hidden;
@@ -77,11 +80,9 @@ body {
 
 
 /* small screen support */
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 1300px) {
 	/* make small screen navigation bar hide other elements */
 	.navbar {
-		z-index: 7;
-		position: fixed;
 		top: 0;
 		width: 100%;
 	}
@@ -109,7 +110,6 @@ body {
 	/* have elements list vertically instead */
 	.navbar.responsive {
 		position: fixed;
-		z-index: 7;
 	}
 	.navbar.responsive .hamburg {
 		position: absolute;
