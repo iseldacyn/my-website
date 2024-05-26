@@ -4,6 +4,19 @@ body {
 	font-family: sans-serif;
 }
 
+
+/* for body of text */
+.main_body {
+	position: relative;
+	margin: 5%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	height: 500vh;
+	background: #e2c187;
+	border: medium solid black;
+	border-radius: 10px;
+}
+
 /* navigation bar color + properties */
 .navbar {
 	background: #e2c187;
@@ -15,11 +28,11 @@ body {
 .navbar a {
 	float: right;
 	display: block;
-	padding: 14px 24px;
-	text-align: center;
+	padding: 20px 24px;
+	text-align: left;
 	text-decoration: none;
 	color: #80281e;
-	font-size: 18px;
+	font-size: 24px;
 }
 .navbar a:hover {
 	background: #80281e;
@@ -48,18 +61,18 @@ body {
 	display: none;
 }
 .bar1, .bar2, .bar3 {
-	width: 35px;
-	height: 4px;
+	width: 40px;
+	height: 6px;
 	background: #80281e;
-	margin: 6px 0;
+	margin: 10px 0;
 	transition: 0.4s;
 }
 .change .bar1 {
-	transform: translate( 0, 10px ) rotate( -45deg );
+	transform: translate( 0, 16px ) rotate( -45deg );
 }
 .change .bar2 { opacity: 0; }
 .change .bar3 {
-	transform: translate( 0, -10px ) rotate( 45deg );
+	transform: translate( 0, -16px ) rotate( 45deg );
 }
 
 
@@ -67,16 +80,21 @@ body {
 @media screen and (max-width: 970px) {
 	/* make small screen navigation bar hide other elements */
 	.navbar {
+		z-index: 7;
 		position: fixed;
 		top: 0;
 		width: 100%;
 	}
 	.navbar .links {
+		position: fixed;
 		display: flex;
+		background: #e2c187;
 		flex-direction: column-reverse;
 		max-height: 0;
+		width: 100%;
 		overflow: hidden;
-		transition: max-height 0.4s ease-out;
+		transform: translateY(68px);
+		transition: max-height 0.4s ease;
 	}
 	.navbar .hamburg {
 		float: right;
@@ -84,18 +102,26 @@ body {
 		padding: 3px 14px;
 		cursor: pointer;
 	}
+	.main_body {
+		margin-top: 10%;
+	}
 
 	/* have elements list vertically instead */
-	.navbar.responsive { position: relative; }
+	.navbar.responsive {
+		position: fixed;
+		z-index: 7;
+	}
 	.navbar.responsive .hamburg {
 		position: absolute;
 		right: 0;
 		top: 0;
 	}
 	.navbar.responsive .links {
-		display: flex;
-		flex-direction: column-reverse;
-		max-height: 200px;
+		text-align: left;
+		max-height: 300px;
+		width: 100;
+		border-bottom: medium solid black;
+		transform: translateY(0px);
 		transition: max-height 0.4s ease-in;
 	}
 	.navbar.responsive a {
@@ -104,4 +130,3 @@ body {
 		text-align: left;
 	}
 }
-
