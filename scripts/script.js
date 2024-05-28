@@ -17,7 +17,7 @@ function toggleHamburger(x)
 /* make navbar scroll up and down on scroll */
 var prev_scroll = window.pageYOffset;
 window.onscroll = function() {
-	if( window.innerWidth > 1300 )
+	if( window.innerWidth > 1100 )
 	{
 		var current_scroll = window.pageYOffset;
 		if( prev_scroll >= current_scroll )

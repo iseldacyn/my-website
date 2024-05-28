@@ -4,12 +4,15 @@ body {
 	font-family: sans-serif;
 }
 
-.footer {
-	position: fixed;
-	background: #000;
-	bottom: 0;
-	display: table;
+.footer-container {
+	display: flex;
+	flex-direction: column;
 	width: 100%;
+	bottom: 0;
+}
+.footer {
+	background: #000;
+	display: table;
 }
 .footer h2 {
 	color: #c8c8c8;
@@ -22,10 +25,10 @@ body {
 	color: #919191;
 }
 .questions {
-	padding: 20px;
-	padding-left: 250px;
 	display: table-cell;
 	text-align: center;
+	padding-left: 15%;
+	padding-top: 20px;
 }
 .questions img.media {
 	padding: 20px 10px;
@@ -35,7 +38,7 @@ body {
 .other-sites {
 	display: table-cell;
 	text-align: center;
-	padding-right: 250px;
+	padding-right: 15%;
 }
 .other-sites ul {
 	list-style-type: none;
@@ -46,8 +49,8 @@ body {
 	padding: 10px;
 }
 .copyright {
-	position: fixed;
-	bottom: 0;
+	position: relative;
+	background: #000;
 }
 .copyright p {
 	color: #afafaf;
@@ -59,7 +62,7 @@ body {
 .main_body {
 	position: relative;
 	margin: 100px 5%;
-	height: 50vh;
+	height: 100vh;
 	background: #e2c187;
 	border: medium solid black;
 	border-radius: 10px;
@@ -130,7 +133,7 @@ body {
 
 
 /* small screen support */
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1100px) {
 	/* make small screen navigation bar hide other elements */
 	.navbar {
 		top: 0;
@@ -175,5 +178,19 @@ body {
 		float: none;
 		display: block;
 		text-align: left;
+	}
+}
+
+/* footer becomes column */
+@media screen and (max-width: 800px) {
+	.footer {
+		display: flex;
+		flex-direction: column;
+	}
+	.questions {
+		padding-left: 0%;
+	}
+	.other-sites {
+		padding-right: 0%;
 	}
 }
