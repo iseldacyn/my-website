@@ -23,18 +23,19 @@ body {
 }
 .questions {
 	padding: 20px;
+	padding-left: 250px;
 	display: table-cell;
 	text-align: center;
 }
 .questions img.media {
-	padding: 10px;
-	padding-top: 20px;
+	padding: 20px 10px;
 	max-height: 40px;
 	max-width: 40px;
 }
 .other-sites {
 	display: table-cell;
 	text-align: center;
+	padding-right: 250px;
 }
 .other-sites ul {
 	list-style-type: none;
@@ -43,6 +44,15 @@ body {
 }
 .other-sites ul li {
 	padding: 10px;
+}
+.copyright {
+	position: fixed;
+	bottom: 0;
+}
+.copyright p {
+	color: #afafaf;
+	font-size: 10px;
+	text-align: center;
 }
 
 /* for body of text */
