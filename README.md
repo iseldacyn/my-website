@@ -1,3 +1,3 @@
 # Iselda's webpage
 
-Still in development! I recently got it hosted on an Oracle Cloud Server and can be reached at https://cyndquil.com 
+My personal webpage including information about my, projects I have completed, projects I plan to complete, and some more stuff about me!
