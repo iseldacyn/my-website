@@ -70,9 +70,13 @@ body {
 .main_body {
 	position: relative;
 	margin: 100px 5%;
+    padding: 20px 30px;
 	background: #e2c187;
 	border: medium solid black;
 	border-radius: 10px;
+    font-size: 24px;
+}
+.main_body h1 {
     text-align: center;
 }
 
