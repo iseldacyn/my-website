@@ -4,8 +4,9 @@ body {
 	font-family: sans-serif;
 }
 
+/* footer of webpage */
 .footer-container {
-    position: fixed;
+    position: relative;
 	background: #000;
 	display: flex;
 	flex-direction: column;
@@ -25,6 +26,11 @@ body {
 .footer a:hover {
 	color: #919191;
 }
+.fc-fixed {
+    position: fixed;
+}
+
+/* links and email */
 .questions {
 	display: table-cell;
 	text-align: center;
@@ -49,6 +55,8 @@ body {
 .other-sites ul li {
 	padding: 10px;
 }
+
+/* bottom blurb */
 .copyright {
 	position: relative;
 }
@@ -109,6 +117,36 @@ body {
 }
 .navbar a.home:hover {
 	background: none;
+}
+
+/* change home page index navigation bar */
+.nb-index {
+    position: fixed;
+	top: 0;
+	width: 100%;
+    display: block;
+	background: #e2c187;
+	border-bottom: medium solid black;
+}
+.nb-index .links {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+}
+.nb-index a {
+	padding: 20px 24px;
+	text-align: center;
+	text-decoration: none;
+	color: #80281e;
+	font-size: 20px;
+}
+.nb-index a.home {
+    display: block;
+    width: 100%;
+	color: #5121b4;
+    font-size: 50px;
+	text-decoration: none;
 }
 
 /* navigation hamburger */
